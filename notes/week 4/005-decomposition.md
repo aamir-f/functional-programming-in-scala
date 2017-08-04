@@ -9,8 +9,8 @@ trait Expr {
 	def isNumber: Boolean
 	def isSum: Boolean
 	def numValue: Int
-	def leftOp: Expression
-	def rightOp: Expression
+	def leftOp: Expr
+	def rightOp: Expr
 }
 
 class Number(n : Int) extends Expr {
